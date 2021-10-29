@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        "use strict"
+        /*
+        Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation),
+        где arg1, arg2 – значения аргументов, operation – строка с названием операции. В зависимости от
+        переданного значения операции (использовать switch) выполнить одну из арифметических операций
+        (использовать функции из задания 4) и вернуть полученное значение.
+        */
+
+        function addition(arg1, arg2) {
+            return arg1 + arg2;
+        };
+
+        function difference(arg1, arg2) {
+            return arg1 - arg2;
+        };
+
+        function divide(arg1, arg2) {
+            return arg1 / arg2;
+        };
+
+        function multiply(arg1, arg2) {
+            return arg1 * arg2;
+        };
+
+        function mathOperation(arg1, arg2, operation) {
+            switch (operation) {
+                case addition:
+                    let result_add = addition(arg1, arg2);
+                    alert(result_add);
+                    break
+                case difference:
+                    let result_diff = difference(arg1, arg2);
+                    alert(result_diff);
+                    break
+                case divide:
+                    let result_div = divide(arg1, arg2);
+                    alert(result_div);
+                    break
+                case multiply:
+                    let result_mult = multiply(arg1, arg2);
+                    alert(result_mult);
+                    break
+            }
+        };
+
+        mathOperation(33, 11, divide);
+
+
+
+
+    </script>
+</body>
+
+</html>
